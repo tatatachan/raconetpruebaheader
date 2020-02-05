@@ -1,0 +1,323 @@
+/*empieza el header*/
+.header{
+    background: #333;
+    color:white;
+    padding:1rem 0;
+    position:fixed;
+    left: 0;
+    top:0;
+    right:0;
+    text-align:left;
+    z-index:2;
+}
+.header a
+{color:white;
+text-decoration:none;
+font-style: italic;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    text-align:left;
+}
+
+.logo{
+    width: 300px;
+    height:200px;
+}
+
+.logoins {
+    width: 50px;
+    height:50px;
+}
+    
+.logofacebook {
+    width: 50px;
+    height:50px;
+}
+
+.imgcontact {
+    height:820px ;
+    width: 950px;
+    float: right;
+    margin-right: 100px;
+}
+
+.menu-icon{
+    display:none;
+}
+.navegacion{text-align:left;
+    margin-right: 30%; /*a mayor por ciento,mas cerca del logo*/
+    font-size:200%; /* aumenta el tamaño de las letras*/
+}
+.navegacion li ul {
+    display:none;
+    position: absolute;;
+    min-width:140px;
+}
+
+.navegacion > li {float:left;}
+.navegacion li:hover > ul{display:block}
+.navegacion li ul li {position:relative;}
+.navegacion ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.navegacion ul li {
+    display: inline-block;
+}
+.navegacion ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.navegacion ul li a:hover {
+    background: #4a4a4a;
+}
+
+/*Termina el header*/
+
+/*Empieza el Main*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+body{
+    font-family: "Lato";
+    background:url("img/logolados.jpg") repeat-y top left,url("img/logolados.jpg") repeat-y top right;
+    background-size: 80px;
+    text-align:center;
+    
+}
+main{padding-top:30px;
+padding-bottom:30px;}
+
+p{color:#5e2129;
+    text-align:center;
+padding-left:10%;
+padding-right:10%;
+font-size:25px}
+
+.portafolio{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    
+}
+
+.portafolio h1{
+    text-align: center;
+    font-size: 38px;
+    margin: 15px 0px 40px;
+}
+
+.portafolio-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.portafolio-item{
+    width:30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.portafolio-text{
+    position: absolute;
+    bottom: 0;
+    padding: 50px;
+
+    background: rgba(19, 28, 59, 0.342);
+    color: #fff;
+
+    transform: translateY(100%);
+
+    transition: all 0.5s ease-out;
+
+}
+
+.portafolio-text p{
+    text-align: justify;
+}
+
+.portafolio-item:hover .portafolio-text{
+    transform: translateY(0%);
+}
+
+p.parrafo1{
+    font-style: italic;
+    color: #D4AF7B;
+    position: absolute;
+}
+
+h1.titol{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Fira Sans', sans-serif;
+    color: #993e37;
+}
+
+.slider {
+    height:500px;
+    width: 850px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex ;
+    padding: 0;
+    width: 800%;
+
+    animation: cambio 40s infinite;
+    animation-direction: alternate;
+    
+}
+
+.slider li {
+    width: 300%;
+    list-style: none;
+
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+@keyframes cambio{
+    0% {margin-left: -0%; }
+    20% {margin-left: -0%; }
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    80% {margin-left: -300%;}
+
+    85% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+}
+p.presentacion {
+    text-align: center;
+    font-family:'Baskervville', serif;
+    margin-top: 1%;
+    text-indent: 25px;
+    margin-left: 45px;
+    margin-right: 54px;
+}
+
+iframe.contact {
+      margin-right: 60px;
+}
+
+
+img.imgcontact{float:right;
+    width:600px;
+    height:450px;
+    weight:100px;
+    margin-left: 50px;;
+}
+
+img.cerveza {
+   height: 500px ;
+   width: 150px ;
+}
+
+/*Aqui termina el Main*/
+
+/*Aqui empieza el Footer*/
+
+img.imagenindex{float:right;
+    width:600px;
+    height:450px;
+    weight:100px;
+}
+footer{
+    background-color:#333;
+    padding-top:30px;
+    background-image: url(img/floor.jpg);
+    background-size: 100%;
+   }
+   footer ul{list-style:none;
+}
+
+class.logo {
+    width:150px;
+    float: center ;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+.logo1{
+    float: left;
+    width: 350px;
+    height: 190px;
+    padding: 30px;
+}
+
+.logo2{
+    width: 200px;
+    height:200px;
+    padding: 30px;
+    
+}
+
+.logo3 {
+        width: 200px;
+        height:200px;
+        padding: 10px;
+        margin-left: 30px;
+        }
+
+        
+.logo4 {
+    width: 250px;
+    height:250px;
+    padding: 20px;
+    margin-left: 30px;
+    }
+
+p.firma {
+    border: 4px solid black;
+    background-color: rgb(160, 93, 58);
+    color: whitesmoke;
+}    
+.formulario {
+    /* Sólo para centrar el formulario a la página */
+    margin: 0 auto;
+    width: 900px;
+    /* Para ver el borde del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+.formulario p{text-align:left;
+}
+
+/*Aquesta pagina ha sigut realitzada per: 
+        Jesús Noguero Verdet,  
+        Héctor Ribas Esteve, 
+        Noe Valdivia,
+        Rafel Ignacio Oro i 
+        Alex Durà
+        Alumnes de 1º ASIR al IES ABASTOS de Valencia*/
